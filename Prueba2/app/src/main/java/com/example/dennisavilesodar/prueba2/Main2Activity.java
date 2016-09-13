@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -26,8 +27,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class Main2Activity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener , View.OnClickListener{
-
+        implements NavigationView.OnNavigationItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,11 +59,6 @@ public class Main2Activity extends AppCompatActivity
         String usuario = parametros.getString("usuario");
 
         Toast.makeText(this, "Bienvenido, " + usuario + "." , Toast.LENGTH_LONG).show();
-    }
-
-    @Override
-    public void onClick(View view) {
-
     }
 
     @Override
@@ -108,17 +103,17 @@ public class Main2Activity extends AppCompatActivity
             // Handle the camera action
             BlankFragmentDatos fragment = new BlankFragmentDatos();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.drawer_layout, fragment);
+            fragmentTransaction.replace(R.id.contenedores, fragment);
             fragmentTransaction.commit();
         } else if (id == R.id.nav_imagen) {
-            BlankFragmentImagen fragment = new BlankFragmentImagen();
+            BlankFragmentImagen fragmentImagen = new BlankFragmentImagen();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.drawer_layout, fragment);
+            fragmentTransaction.replace(R.id.contenedores,fragmentImagen);
             fragmentTransaction.commit();
         } else if (id == R.id.nav_imagenes) {
-            BlankFragmentImagenes fragment = new BlankFragmentImagenes();
+            BlankFragmentImagenes fragmentImagenes = new BlankFragmentImagenes();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.drawer_layout, fragment);
+            fragmentTransaction.replace(R.id.contenedores, fragmentImagenes);
             fragmentTransaction.commit();
         }
 

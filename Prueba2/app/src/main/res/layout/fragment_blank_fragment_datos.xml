@@ -9,7 +9,7 @@
 
     <Space
         android:layout_width="20px"
-        android:layout_height="170px" />
+        android:layout_height="100px" />
 
     <TextView
         android:layout_width="match_parent"
