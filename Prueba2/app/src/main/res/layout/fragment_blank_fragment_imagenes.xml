@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dennisavilesodar.prueba2.BlankFragmentImagenes">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="170px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cargar Lista Imagenes"
+        android:id="@+id/textView12"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargar Imagenes"
+        android:id="@+id/btnImagenes" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView1" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

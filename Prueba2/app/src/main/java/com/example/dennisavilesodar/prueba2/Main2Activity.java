@@ -1,8 +1,13 @@
 package com.example.dennisavilesodar.prueba2;
 
+import android.app.ProgressDialog;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,9 +17,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class Main2Activity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener , View.OnClickListener{
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +53,17 @@ public class Main2Activity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Bundle parametros = getIntent().getExtras();
+
+        String usuario = parametros.getString("usuario");
+
+        Toast.makeText(this, "Bienvenido, " + usuario + "." , Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onClick(View view) {
+
     }
 
     @Override
@@ -80,18 +104,22 @@ public class Main2Activity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_datos) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+            BlankFragmentDatos fragment = new BlankFragmentDatos();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.drawer_layout, fragment);
+            fragmentTransaction.commit();
+        } else if (id == R.id.nav_imagen) {
+            BlankFragmentImagen fragment = new BlankFragmentImagen();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.drawer_layout, fragment);
+            fragmentTransaction.commit();
+        } else if (id == R.id.nav_imagenes) {
+            BlankFragmentImagenes fragment = new BlankFragmentImagenes();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.drawer_layout, fragment);
+            fragmentTransaction.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

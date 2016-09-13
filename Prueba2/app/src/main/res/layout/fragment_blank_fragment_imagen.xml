@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dennisavilesodar.prueba2.BlankFragmentImagen">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="170px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cargar Imagenes"
+        android:id="@+id/textView11"
+        android:textAlignment="center" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="30px" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="100px"
+            android:layout_height="20px" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imagen 1"
+            android:id="@+id/btnImagen1"
+            android:layout_gravity="top" />
+
+        <Space
+            android:layout_width="200px"
+            android:layout_height="20px" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imagen 2"
+            android:id="@+id/btnImagen2"
+            android:layout_gravity="top" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgImagen" />
+
+</LinearLayout>

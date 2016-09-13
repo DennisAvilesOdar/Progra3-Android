@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dennisavilesodar.prueba2.BlankFragmentDatos">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="170px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mis Datos"
+        android:id="@+id/textView4"
+        android:textAlignment="center" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="30px" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Codigo Universitario:"
+            android:id="@+id/textView5" />
+
+        <Space
+            android:layout_width="50px"
+            android:layout_height="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111TD25209"
+            android:id="@+id/textView6" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Apellido, Nombre:"
+            android:id="@+id/textView7" />
+
+        <Space
+            android:layout_width="50px"
+            android:layout_height="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dennis Aviles Odar"
+            android:id="@+id/textView9" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Linea Investigacion:"
+            android:id="@+id/textView8" />
+
+        <Space
+            android:layout_width="50px"
+            android:layout_height="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programacion e Int. Art"
+            android:id="@+id/textView10" />
+    </LinearLayout>
+
+</LinearLayout>
