@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         usuario[0][0] = "admin";
         usuario[0][1] = 1234;
         usuario[1][0] = "Dennis";
-        usuario[1][1] = 4321;
+        usuario[1][1] = 9876;
 
         String usuarioSpiner[] = new String[usuario.length];
 

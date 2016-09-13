@@ -7,10 +7,6 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <Space
-        android:layout_width="20px"
-        android:layout_height="100px" />
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,7 +65,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dennis Aviles Odar"
+            android:text="Dennis Aviles"
             android:id="@+id/textView9" />
     </LinearLayout>
 
@@ -96,7 +92,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Programacion e Int. Art"
+            android:text="Inteligencia Artificial"
             android:id="@+id/textView10" />
     </LinearLayout>
 

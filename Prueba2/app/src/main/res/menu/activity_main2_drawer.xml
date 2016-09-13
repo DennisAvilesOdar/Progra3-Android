@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_datos"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_account_circle_black_24dp"
             android:title="Mis Datos" />
         <item
             android:id="@+id/nav_imagen"
@@ -12,7 +12,7 @@
             android:title="Cargar Imagen" />
         <item
             android:id="@+id/nav_imagenes"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Cargar Lista de Imagenes" />
+            android:icon="@drawable/ic_photo_album_black_24dp"
+            android:title="Lista de Imagenes" />
     </group>
 </menu>
